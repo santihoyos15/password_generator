@@ -1,0 +1,142 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffff;
+    --green: #10B981;
+    --grey: #D5D4D8;
+    --main-black: #1F2937;
+    --secondary-black: #273549;
+    --light-green: #55F991;
+}
+
+body {
+    background: var(--main-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 320px;
+    padding: 30px;
+}
+
+.main-heading {
+    color: var(--white);
+    font-family: Karla, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    letter-spacing: -0.025em;
+    
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.primary-p {
+    color: var(--grey);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.primary-button {
+    height: 42px;
+    width: 223px;
+    border-radius: 6px;
+    padding: 9px, 17px, 9px, 15px;
+    border: none;
+    color: var(--white);
+    background: var(--green);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Inter, sans-serif;
+}
+.primary-button:focus {
+    outline: none;
+}
+
+.length-input {
+    height: 39px;
+    width: 60px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--secondary-black);
+    color: var(--light-green);
+    text-align: center;
+}
+.length-input:focus {
+    outline: 2px solid var(--green);
+}
+.length-input::-webkit-outer-spin-button,
+.length-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+hr {
+    border: 0.1px solid #2F3E53;
+    margin: 28px 0;
+}
+
+.password-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    column-gap: 20px;
+}
+
+.password {
+    background-image: url("./assets/three_dots.svg");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center; 
+    margin: 5px;
+    width: 100%;
+    max-width: 400px;
+    height: 39px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--secondary-black);
+    text-align: center;
+    color: var(--light-green);
+    font-family: Inter;
+    font-size: auto;
+    font-weight: 500;
+    cursor: pointer;
+    caret-color: transparent;
+    user-select: none;
+}
+
+.password:focus {
+    outline: none;
+}
+
+.password::selection {
+    background: transparent;
+}
+
+.password:active {
+    background-color: var(--green);
+    color: var(--white);
+}

@@ -1,0 +1,30 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1 class="main-heading">Generate a <br> <span class="green-text">random password<span></h1>
+            <p class="primary-p">Never use an insecure password again.</p>
+            <div class="input-container">
+                <button class="generate-passwords primary-button">
+                    <img src="./assets/lightning.svg">
+                    Generate passwords
+                </button>
+                <input class="length-input" type="number" value="6" min="6" max="20">
+            </div>
+            <hr/>
+            <div class="password-container">
+                <input class="password" type="text" spellcheck="false">
+                <input class="password" type="text" spellcheck="false">
+                <input class="password" type="text" spellcheck="false">
+                <input class="password" type="text" spellcheck="false">
+            </div>
+        </main>
+        <script src="./generateRandomPasswords.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
