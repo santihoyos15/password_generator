@@ -139,4 +139,10 @@ hr {
 .password:active {
     background-color: var(--green);
     color: var(--white);
+    }
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 80%;
+    }
 }
